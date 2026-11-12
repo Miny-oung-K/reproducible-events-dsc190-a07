@@ -1,5 +1,6 @@
 import marimo
 
+__generated_with = "0.25.2"
 app = marimo.App(width="medium")
 
 
@@ -9,12 +10,16 @@ def _():
     from pathlib import Path
     import matplotlib.pyplot as plt
     import marimo as mo
+
     return Path, csv, mo, plt
 
 
 @app.cell
 def _(mo):
-    mo.md("# Event durations\nDistribution of event durations after cleaning and feature engineering.")
+    mo.md("""
+    # Event durations
+    Distribution of event durations after cleaning and feature engineering.
+    """)
     return
 
 
